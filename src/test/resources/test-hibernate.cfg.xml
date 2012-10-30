@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+	<session-factory>
+
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernateDB</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+
+		<property name="hibernate.connection.pool_size">1</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.hbm2ddl.auto">create-drop</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<!-- <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property> -->
+		<!-- <property name="transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property> -->
+		<!-- <property name="current_session_context_class">thread</property> -->
+
+		<!-- Entity Mappings for Simple Usage -->
+		<mapping class="com.tutorial.hibernate.simple.entity.UserDetails" />
+
+		<!-- Entity Mappings for Embedded Usage -->
+		<mapping class="com.tutorial.hibernate.embedded.entity.EmbeddedlUser" />
+		<mapping class="com.tutorial.hibernate.embedded.entity.EmbeddedAddress" />
+
+		<!-- Entity Mappings for Relational Mapping Usage -->
+		<mapping class="com.tutorial.hibernate.relationship.entity.RelationalUser" />
+		<mapping class="com.tutorial.hibernate.relationship.entity.Home" />
+		<mapping
+			class="com.tutorial.hibernate.relationship.entity.RelationalAddress" />
+		<mapping class="com.tutorial.hibernate.relationship.entity.Country" />
+
+		<!-- Entity Mappings for Many-to-many relational mapping Usage -->
+		<mapping class="com.tutorial.hibernate.manytomany.entity.Worker" />
+		<mapping class="com.tutorial.hibernate.manytomany.entity.Site" />
+
+		<!-- Inheritance Mapping - table per Hierarchey -->
+		<mapping
+			class="com.tutorial.hibernate.inheritance.tblperhierarchy.entity.Building" />
+		<mapping
+			class="com.tutorial.hibernate.inheritance.tblperhierarchy.entity.Unit" />
+		<mapping
+			class="com.tutorial.hibernate.inheritance.tblperhierarchy.entity.House" />
+
+		<!-- Inheritance Mapping - table per Class -->
+		<mapping
+			class="com.tutorial.hibernate.inheritance.tblperclass.entity.TblPerClassBuilding" />
+		<mapping
+			class="com.tutorial.hibernate.inheritance.tblperclass.entity.TblPerClassUnit" />
+		<mapping
+			class="com.tutorial.hibernate.inheritance.tblperclass.entity.TblPerClassHouse" />
+
+		<!-- Inheritance Mapping - Joined Strategy -->
+		<mapping
+			class="com.tutorial.hibernate.inheritance.joinstrategy.entity.JoinedBuilding" />
+		<mapping
+			class="com.tutorial.hibernate.inheritance.joinstrategy.entity.JoinedHouse" />
+		<mapping
+			class="com.tutorial.hibernate.inheritance.joinstrategy.entity.JoinedUnit" />
+
+	</session-factory>
+
+</hibernate-configuration>

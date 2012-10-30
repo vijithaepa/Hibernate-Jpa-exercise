@@ -1,0 +1,27 @@
+10-27 11:31:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADDRESS" not found; SQL statement:
+alter table ADDRESS drop constraint FKE66327D49E17B6 [42102-160]
+10-27 11:31:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADDRESS" not found; SQL statement:
+alter table ADDRESS drop constraint FKE66327D442E846F5 [42102-160]
+10-27 11:31:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_DETAIL" not found; SQL statement:
+alter table USER_DETAIL drop constraint FKF9BE5B456AFC97AE [42102-160]
+10-27 11:31:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_DETAIL" not found; SQL statement:
+alter table USER_DETAIL drop constraint FKF9BE5B45103CD858 [42102-160]
+10-27 11:31:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORKER_SITE" not found; SQL statement:
+alter table WORKER_SITE drop constraint FKBCA34768B518B48F [42102-160]
+10-27 11:31:38 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORKER_SITE" not found; SQL statement:
+alter table WORKER_SITE drop constraint FKBCA347686C80152F [42102-160]
+10-27 21:39:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "RELATIONAL_ADDRESS" not found; SQL statement:
+alter table RELATIONAL_ADDRESS drop constraint FKD8141ABC42E846F5 [42102-160]
+10-27 21:39:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "RELATIONAL_USER_DETAIL" not found; SQL statement:
+alter table RELATIONAL_USER_DETAIL drop constraint FKF26B9A2D6AFC97AE [42102-160]
+10-27 21:39:19 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: Table "RELATIONAL_USER_DETAIL" not found; SQL statement:
+alter table RELATIONAL_USER_DETAIL drop constraint FKF26B9A2D103CD858 [42102-160]

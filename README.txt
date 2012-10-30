@@ -93,7 +93,7 @@ JDK 1.5.x or higher
 Maven 2 or higher
 set java_home and m2_home.
 eClipse 3.5 or higher
-MySQL DB
+MySQL DB (Optional)
 
 Steps:
 ------
